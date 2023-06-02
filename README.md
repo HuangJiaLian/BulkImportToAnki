@@ -2,6 +2,12 @@
 An example to demonstrate how to import [Anki](https://apps.ankiweb.net/#download) cards in a batch.
 
 ## Usage 
+First
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
 Using 
 ```bash
 python convert2csv.py
