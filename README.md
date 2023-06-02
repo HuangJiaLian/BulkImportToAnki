@@ -1,10 +1,23 @@
 # BulkImportToAnk
 An example to demonstrate how to import [Anki](https://apps.ankiweb.net/#download) cards in a batch.
+And demonstrate how to generate an example of each word in the sentence and generate a PDF.
 
 ## Usage 
-Using 
+### First
+1. 导入依赖
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+2. 设置字体
+下载SimSun.ttf字体，并把它放在/python/site-packages/reportlab/fonts
+
+3. 注册翻译平台的key填充进代码内
+
+### Using 
 ```bash
-python convert2csv.py
+python main.py
 ```
 You can convert the PDF to a csv file `DataExportToAnki.csv`. 
 
